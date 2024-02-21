@@ -36,6 +36,7 @@ public class ConsolaArerolinea extends ConsolaBasica
             e.printStackTrace();
         }
     }
+    
 
     public static void main( String[] args )
     {
