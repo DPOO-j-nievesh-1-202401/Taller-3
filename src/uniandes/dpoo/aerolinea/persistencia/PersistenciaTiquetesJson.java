@@ -205,7 +205,7 @@ public class PersistenciaTiquetesJson implements IPersistenciaTiquetes
         {
             JSONObject jTiquete = new JSONObject( );
             jTiquete.put( CODIGO_TIQUETE, tiquete.getCodigo( ) );
-            jTiquete.put( CODIGO_RUTA, tiquete.getVuelo( ).getRuta( ).getCodigoRuta( ) );
+            jTiquete.put( CODIGO_RUTA, ((Ruta) tiquete.getVuelo( ).getRuta( )).getCodigoRuta( ) );
             jTiquete.put( FECHA, tiquete.getVuelo( ).getFecha( ) );
             jTiquete.put( TARIFA, tiquete.getTarifa( ) );
             jTiquete.put( USADO, tiquete.esUsado( ) );

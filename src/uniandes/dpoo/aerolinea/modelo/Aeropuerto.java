@@ -15,7 +15,9 @@ public class Aeropuerto
     // TODO completar
     
 
-    /**
+    private static final double RADIO_TERRESTRE = 0;
+
+	/**
      * Este método calcula la distancia *aproximada* entre dos aeropuertos. Hay fórmulas más precisas pero esta es suficientemente buena para el caso de la aerolínea.
      * 
      * Este método asume que las coordenadas (latitud y longitud) de los aeropuertos están expresadas en la forma que las hace más cercanas. Si no es así, la distancia entre
@@ -45,5 +47,15 @@ public class Aeropuerto
 
         return ( int )Math.round( distancia );
     }
+
+	private double getLongitud() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	private double getLatitud() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 }

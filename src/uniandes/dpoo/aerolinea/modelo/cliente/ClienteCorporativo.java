@@ -1,5 +1,7 @@
 package uniandes.dpoo.aerolinea.modelo.cliente;
 
+import java.util.Collection;
+
 import org.json.JSONObject;
 
 /**
@@ -11,7 +13,15 @@ public class ClienteCorporativo extends Cliente
     
 
 
-    /**
+    private static final Collection<?> CORPORATIVO = null;
+	private Collection<?> nombreEmpresa;
+	private Collection<?> tamanoEmpresa;
+
+	public ClienteCorporativo(String nombreEmpresa, int tam) {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
      * Crea un nuevo objeto de tipo a partir de un objeto JSON.
      * 
      * El objeto JSON debe tener dos atributos: nombreEmpresa (una cadena) y tamanoEmpresa (un número).
