@@ -5,7 +5,8 @@ import java.util.Collection;
 import uniandes.dpoo.aerolinea.modelo.Vuelo;
 import uniandes.dpoo.aerolinea.modelo.cliente.Cliente;
 
-public class Tiquete {
+public class Tiquete 
+{
 
 	public Tiquete(String codigoTiquete, Vuelo elVuelo, Cliente elCliente, int tarifa) {
 		// TODO Auto-generated constructor stub

@@ -1,7 +1,5 @@
 package uniandes.dpoo.aerolinea.modelo.cliente;
 
-import java.util.Collection;
-
 import org.json.JSONObject;
 
 /**
@@ -9,17 +7,36 @@ import org.json.JSONObject;
  */
 public class ClienteCorporativo extends Cliente
 {
-    // TODO completar
-    
 
+    public static final String CORPORATIVO = "Corporativo";
+    public static final int GRANDE = 1;
+    public static final int MEDIANA = 2;
+    public static final int PEQUENA = 3;
+    private String nombreEmpresa;
+	private int tamanoEmpresa;
 
-    private static final Collection<?> CORPORATIVO = null;
-	private Collection<?> nombreEmpresa;
-	private Collection<?> tamanoEmpresa;
-
+	
 	public ClienteCorporativo(String nombreEmpresa, int tam) {
-		// TODO Auto-generated constructor stub
+		this.nombreEmpresa = nombreEmpresa;
+		this.tamanoEmpresa = tam;
 	}
+	
+
+	public String getNombreEmpresa() {
+		return this.nombreEmpresa;
+	}
+	public int getTamanoEmpresa() {
+		return this.tamanoEmpresa;
+	}
+	@Override
+	public String getTipoCliente() {
+		return CORPORATIVO;
+	}
+	@Override
+	public String getIdentificador() {
+		return null;
+	}
+
 
 	/**
      * Crea un nuevo objeto de tipo a partir de un objeto JSON.
@@ -47,4 +64,6 @@ public class ClienteCorporativo extends Cliente
         jobject.put( "tipo", CORPORATIVO );
         return jobject;
     }
+
+
 }
